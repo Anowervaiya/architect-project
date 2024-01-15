@@ -1,0 +1,332 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* share option  */
+.font {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.description {
+    color: #727272;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    padding: 20px;
+}
+
+/* header part start from here  */
+
+header {
+    border: 2px solid red;
+    background-color: rgba(255, 144, 14, 0.10);
+
+}
+
+/* nav section  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 70px auto;
+
+}
+
+
+
+nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav>ul li {
+    list-style: none;
+}
+
+nav>ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #424242;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* banner section  */
+.banner {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.banner-title {
+    font-size: 65px;
+    font-weight: 700;
+    color: #131313;
+
+}
+
+
+
+.banner img {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* header part end here  */
+
+
+
+
+/* main part start from here  */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* feature section  */
+
+.feature-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+
+}
+
+.feature-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+.feature-images img {
+    width: 100%;
+}
+
+.feature-description {
+    flex: 1;
+    margin-left: 20px;
+    text-align: start;
+    margin-top: 200px;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feature {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feature-description p {
+    text-align: start;
+}
+
+/* feature love and enjoy section  */
+
+.feature-love-container {
+    display: flex;
+    margin-top: 130px;
+    gap: 70px;
+}
+
+.feature-card-container {
+    flex: 1;
+}
+
+.feature-card-container h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card-container h2,
+.feature-card-container p {
+    text-align: start;
+}
+
+.feature-love-img {
+    flex: 1;
+}
+
+.feature-love-img img {
+    width: 100%;
+    margin-top: 100px;
+
+
+
+
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+}
+
+
+.card-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.ten-year {
+    padding: 15px;
+    max-width: 200px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+}
+
+.ten-year h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.ten-year p {
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* fact section  */
+
+.fact-container {
+    margin: 150px 0;
+}
+
+.fact-container p {
+    text-align: start;
+    margin-bottom: 100px;
+}
+
+.little-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.little-card {
+    width: 241.831px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px 40px;
+    text-align: center;
+
+
+}
+
+.little-card p {
+    margin-top: 0;
+    text-align: center;
+   
+}
+
+
+/* sponsor section  */
+
+.sponsor h1 {
+    text-align: center;
+}
+
+.sponsor-logo {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sponsor-logo img {
+    margin: 32px;
+}
+
+/* main part end here  */
+
+
+
+
+/* footer part start from here  */
+
+footer {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.copyright {
+    margin: 130px 0;
+}
+
+.copyright p {
+    border-radius: 5px;
+    background: #FFF4E7;
+    padding: 15px 0;
+
+}
+
+/* footer part end here  */
