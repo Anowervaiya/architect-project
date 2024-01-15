@@ -45,6 +45,7 @@ body {
 /* header part start from here  */
 
 header {
+    padding: 0 80px;
     border: 2px solid red;
     background-color: rgba(255, 144, 14, 0.10);
 
@@ -58,6 +59,7 @@ nav {
     max-width: 1200px;
     margin: 70px auto;
 
+
 }
 
 
@@ -65,15 +67,17 @@ nav {
 nav>ul {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+
 }
 
 nav>ul li {
     list-style: none;
+    margin-right: 20px;
 }
 
 nav>ul li a {
     text-decoration: none;
-    margin-right: 30px;
     color: #424242;
     text-align: center;
     font-size: 18px;
@@ -113,8 +117,9 @@ nav>ul li a {
 /* main part start from here  */
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px;
+    margin: 0 auto; */
+    padding: 100px;
 }
 
 /* feature section  */
@@ -285,7 +290,7 @@ main {
 .little-card p {
     margin-top: 0;
     text-align: center;
-   
+
 }
 
 
@@ -296,14 +301,19 @@ main {
 }
 
 .sponsor-logo {
-    max-width: 1200px;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
+.sponsor-logo {
+    margin-top: 132px;
+}
+
 .sponsor-logo img {
-    margin: 32px;
+    margin-top: 40px;
 }
 
 /* main part end here  */
@@ -315,11 +325,11 @@ main {
 
 footer {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .copyright {
-    margin: 130px 0;
+    margin: 0 0 130px;
 }
 
 .copyright p {
@@ -330,3 +340,83 @@ footer {
 }
 
 /* footer part end here  */
+
+@media screen and (max-width:600px) {
+    header {
+        padding: 0;
+    }
+
+    nav,
+    nav>ul,
+    .feature-container,
+    .feature-love-container,
+    .little-card-container,
+    .sponsor-logo {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .font,
+    .description {
+        padding: 0 20px;
+    }
+
+    .feature-card-container p,
+    .feature-card-container h5,
+    .butn {
+        text-align: center;
+    }
+
+    .feature-images {
+        grid-template-columns: 1fr;
+
+    }
+
+
+    nav>Ul li {
+        margin-top: 45px;
+        text-align: center
+    }
+
+
+    .ten-year {
+        left: 90px;
+        top: 0;
+    }
+
+
+    .little-card-container {}
+
+}
+
+@media screen and (min-width:590px) and (max-width:1100px) {
+    main {
+        padding: 100px
+    }
+
+    .ten-year {
+        left: 90px;
+        top: 0;
+    }
+
+    .feature-container,
+    .feature-love-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .little-card-container {
+        gap: 10px;
+    }
+
+    .little-card-container,
+    .sponsor-logo {
+        justify-content: space-evenly;
+    }
+}
